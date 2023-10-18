@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../img/hjcz.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+nav {
+  position: relative;
+}
+.historys {
+  display: flex;
+  width: 80vw;
+  margin: 80px auto;
+}
+.ppanel:nth-child(5) {
+  margin-right: 0;
+}
+.ppanel {
+  position: relative;
+  flex: 1;
+  height: 70vh;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: flex 2s;
+  cursor: pointer;
+}
+.ppanel a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: solid;
+  border-bottom: 3px solid #fff;
+}
+.ppanel a:hover {
+  color: #fd350d;
+  border-bottom: 3px solid #fd350d;
+}
+.ppanel h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  transition: opacity 3s;
+  opacity: 0;
+}
+.pactive {
+  flex-grow: 8;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .ppanel:nth-of-type(4),
+  .ppanel:nth-of-type(5) {
+    display: none;
+  }
+}

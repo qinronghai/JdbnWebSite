@@ -1,0 +1,77 @@
+body {
+  font-size: 1.2vw;
+  background: linear-gradient(90deg, #f00, #faf008);
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  main {
+    width: 45vw;
+    margin: 150px auto 80px; /* 将子元素居中 */
+    #feedback-form {
+      /* 为表单元素设置样式 */
+      label {
+        display: block;
+        margin: 1em 0;
+      }
+
+      input,
+      textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: .5em;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      textarea {
+        height: 200px;
+        resize: none;
+      }
+
+      button {
+        padding: .5em 2em;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      #estimate-item {
+        margin: 0;
+      }
+      .estimate {
+        input {
+          width: 10px;
+          // all: initial;
+          padding: 15px;
+          margin: 10px;
+        }
+      }
+      #suggest {
+        margin-bottom: .5em;
+      }
+      select {
+        padding: 2px;
+        margin-bottom: 10px;
+        color: #333;
+        font-size: .5vw;
+        background: no-repeat right, linear-gradient(to bottom, rgb(235, 222, 222), #ddd);
+        border: 1px solid #ccc;
+      }
+      select:hover {
+        background-color: #ddd;
+      }
+
+      select:focus {
+        border-color: #333;
+      }
+
+      select:disabled {
+        color: #999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

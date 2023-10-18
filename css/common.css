@@ -1,0 +1,116 @@
+.mybody {
+  z-index: -1 !important;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #ffd3a5, #fd6585);
+  background-repeat: no-repeat;
+}
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: block;
+  display: block;
+  width: 100%;
+  min-width: 382px;
+  height: 80px;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(250, 240, 8, 1));
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+label.logo {
+  padding: 0 20px;
+  color: #fff;
+  font-family: STXinwei;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;
+}
+label.logo a {
+  color: white;
+}
+label.logo a:hover {
+  color: white !important;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+  /* font-family: STKaiti; */
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+nav ul li a {
+  padding: 7px 13px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+nav a.active,
+nav a:hover {
+  color: #ed5a65;
+  background: white;
+  transition: .5s;
+}
+.checkbtn {
+  float: right;
+  display: none;
+  margin-right: 40px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    padding-left: 50px;
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -120%;
+    width: 100%;
+    text-align: center;
+    background: #2b73af;
+    border-radius: 0 20px;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    color: #0082e6;
+    background: none;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+/* 导航栏结束 */

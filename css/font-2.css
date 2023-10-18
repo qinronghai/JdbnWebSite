@@ -1,0 +1,22 @@
+/* 阿里巴巴图标 */
+@font-face {
+  font-family: "iconfont"; /* Project id 2521101 */
+
+  src: url("//at.alicdn.com/t/font_2521101_xyja3ndmzqc.woff2?t=1620198640574") format("woff2"),
+  url("//at.alicdn.com/t/font_2521101_xyja3ndmzqc.woff?t=1620198640574") format("woff"),
+  url("//at.alicdn.com/t/font_2521101_xyja3ndmzqc.ttf?t=1620198640574") format("truetype");
+}
+.iconfont {
+  color: white;
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  font-style: normal;
+  cursor: pointer;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke-width: .2px;
+}
+.iconfont:hover {
+  color: yellow;
+}

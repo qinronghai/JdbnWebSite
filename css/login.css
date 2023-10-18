@@ -1,0 +1,178 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #ff0000, #faf008);
+}
+.box .content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 65vw;
+  min-height: 75vh;
+  background-color: #e4dae8;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+.box .content .images {
+  position: absolute;
+  left: -1%;
+}
+.box .content .login-img {
+  width: 45%;
+  height: 90%;
+  border-radius: 15%;
+}
+.box .content .register-img {
+  width: 45%;
+  border-radius: 15%;
+  opacity: 0;
+}
+.box .content .login-wrapper {
+  position: absolute;
+  right: 10%;
+  box-sizing: border-box;
+  width: 30vw;
+  height: 70vh;
+  padding: 0 4vw 4vw;
+  background: rgba(244, 240, 245, 0.6);
+  border-radius: 30px;
+  transition: 1s;
+  backdrop-filter: blur(1px);
+}
+.box .content .login-wrapper .top-tips span:nth-child(1) {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.box .content .login-wrapper .top-tips .top-tips-span {
+  float: right;
+  color: #4f85e2;
+  font-size: 15px;
+  line-height: 25px;
+  border-bottom: 1px solid #4f85e2;
+  cursor: pointer;
+}
+.box .content .login-wrapper h1 {
+  margin: 20px 0;
+  font-size: 2vw;
+}
+.box .content .login-wrapper .other-login {
+  width: 60%;
+  height: 40px;
+  padding-bottom: 2px;
+  margin: 1vw 0;
+  color: #fff;
+  font-size: 10px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #4f85e2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box .content .login-wrapper .other-login img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.box .content .login-wrapper .other-login span {
+  font-size: 1px;
+  vertical-align: middle;
+}
+.box .content .login-wrapper .login-form,
+.box .content .login-wrapper .register-form {
+  width: 100%;
+}
+.box .content .login-wrapper .login-form .form-item .text-tips,
+.box .content .login-wrapper .register-form .form-item .text-tips {
+  margin: 5px;
+  color: #7b7a7b;
+}
+.box .content .login-wrapper .login-form .form-item .text-tips .forgot-password,
+.box .content .login-wrapper .register-form .form-item .text-tips .forgot-password {
+  float: right;
+  color: #4f85e2;
+  font-size: 15px;
+  line-height: 25px;
+  border-bottom: 1px solid #4f85e2;
+  cursor: pointer;
+}
+.box .content .login-wrapper .login-form .form-item input,
+.box .content .login-wrapper .register-form .form-item input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  margin: 5px 0;
+  font-size: 17px;
+  border: 0;
+  border-radius: 5;
+}
+.box .content .login-wrapper .login-form .form-item input:focus,
+.box .content .login-wrapper .register-form .form-item input:focus {
+  border: 1px solid #4f85e2;
+  outline: none;
+}
+.box .content .login-wrapper .login-form .btn,
+.box .content .login-wrapper .register-form .btn {
+  width: 150px;
+  height: 50px;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 20px;
+  background-color: #3b3a3b;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box .content .login-wrapper .login-form {
+  display: block;
+}
+.box .content .login-wrapper .register-form {
+  display: none;
+}
+.add-class-content {
+  background-color: #dfdcf4 !important;
+  transition: 0.1s;
+}
+.add-class-login-img {
+  animation: disappear 0.3s forwards;
+  animation-timing-function: ease;
+}
+.add-class-login-img-show {
+  animation: appear 1s forwards;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+}
+.add-class-register-img {
+  animation: appear 1s forwards;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+}
+@keyframes appear {
+  from {
+    border-radius: 15%;
+    opacity: 0;
+  }
+  to {
+    border-radius: 0;
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* 媒体查询 */
+@media screen and (min-width: 1200px) {
+  .box .content .login-wrapper {
+    width: 25vw;
+  }
+}
